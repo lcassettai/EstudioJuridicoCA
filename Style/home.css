@@ -1,0 +1,96 @@
+/* --------------------- HOME----------------------------*/
+
+#home{
+  background-color: black;
+}
+
+#home > h1{
+  font-size: 40px;
+}
+
+@keyframes logoAnimacion {
+  0%   {opacity:0;}
+  100% {opacity:1;}
+}
+
+#topHead{
+  overflow: hidden;
+  background-color:#f7f7f7;
+  top:0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: -3px 5px 28px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px 5px 28px -4px rgba(0,0,0,0.75);
+  box-shadow: -3px 5px 28px -4px rgba(0,0,0,0.75);
+}
+
+#topHead h1{
+  margin:0px;
+  padding:5px;
+  display: inline-block;
+  color:black;
+  letter-spacing: 3px;
+}
+
+#topHead span{
+  color:#B37821;
+  letter-spacing: 3px;
+}
+
+.headIzquierda{
+  width: 34.375%;
+  float:left;
+}
+
+#menuTop{
+  padding:13px;
+  float:right;
+}
+
+#menuTop ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin:0px;
+  padding:0px;
+}
+
+#menuTop ul li{
+  display: inline-block;
+}
+
+#menuTop ul li a{
+
+  color:#333;
+  padding:15px;
+  text-align: center;
+  display: block;
+  font-size: 22px;
+  text-decoration: none;
+  font-size: 21px;
+  transition:0.3s;
+  transition-timing-function: ease-in;
+  font-family: 'Questrial', sans-serif;
+}
+
+#logoContenedor{
+  width: 100%;
+  margin:0px auto;
+  padding:10%;
+  box-sizing: border-box;  
+  overflow: hidden;
+  transition: 1s;
+  animation-duration: 8s;
+  animation-name: logoAnimacion;
+}
+
+#logoContenedor h1{
+	 font-size: 50px;
+	 letter-spacing: 3px;
+   margin:0px;
+}
+
+#menuTop ul li a:hover{
+  color:black;
+  transform:scale(1.2,1.2);
+}

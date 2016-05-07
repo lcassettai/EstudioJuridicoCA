@@ -1,0 +1,119 @@
+/* --------------------- Sobre Nostoros----------------------------*/
+
+#nosotros{
+  background-color: white;
+  position: relative;
+  height: 100%;
+}
+
+.nosotros{
+  width: 100%;
+  height: 100%;
+}
+
+#nosotros img{
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top:20%;
+  left:5%;
+  opacity:0.9;
+}
+
+.parrafoNostors h2{
+  color:black;
+  font-family: 'Libre Baskerville', serif;
+  margin:0px;
+  padding:15px;
+}
+
+.parrafoNostors{
+  position: absolute;
+  top:23%;
+  left:65%;
+  transform: translate(-50%);
+  width: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+  border-bottom: 3px solid rgba(51,51,51,0.5);
+  opacity: 0.8;
+}
+
+
+.parrafoNostors p{
+  color: black;
+  font-size:13px;
+  letter-spacing: 0.1px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  padding:14px;
+}
+
+#nosotros::-webkit-scrollbar{
+  width: 10px;
+  background: #dbe8ec;
+}
+#nosotros::-webkit-scrollbar-button{
+  width:8px;
+  height: 5px;
+}
+#nosotros::-webkit-scrollbar-track{
+  background:#333;
+  border:thin solid #1a1f25;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#nosotros::-webkit-scrollbar-thumb{
+  background: #ccc;
+  -webkit-box-shadow:   inset 0 1px 0 rgba(255,255,225,.5),
+                inset 1px 0 0 rgba(255,255,255,.4),
+                inset 0 1px 2px rgba(255,255,255,.3);
+
+  border:thin solid #232c34;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+#nosotros::-webkit-scrollbar-thumb:hover{
+    background: #ccc;;
+}
+/* Pseudo-clase */
+#nosotros::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(77,161,112,.6);
+}
+
+@media screen and (max-width:1024px){
+  #nosotros{
+    overflow: auto;
+  }
+  .parrafoNostors{
+    position: static;
+    display: block;
+    width: 100%;
+    transform: translate(0%);
+
+  }
+
+  #nosotros img{
+    display: none;
+  }
+
+  .parrafoNostors h2{
+    padding-top:100px;
+  }
+}
+
+@media screen and (max-height:620px) and (min-width:900px){
+  #nosotros img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 20%;
+    left: 5%;
+    opacity: 0.9;
+}
+
+.parrafoNostors {
+  width:70%;
+}
+}

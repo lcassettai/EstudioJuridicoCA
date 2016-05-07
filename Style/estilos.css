@@ -1,0 +1,217 @@
+@import url(menuResponsive.css);
+
+html{
+  height: 100%;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    height: 100%;
+    background-color: #333;
+}
+
+*{
+  font-family: 'Questrial', sans-serif;
+}
+
+/*Contenedor Principal*/
+#contendor{
+  height: 100%;
+}
+
+
+/* --------------------- Contacto----------------------------*/
+
+
+
+#contacto h2{
+  font-family: 'Questrial', sans-serif;
+  font-size: 3.125rem;
+  line-height: 4.688rem;
+  font-weight: 600;
+  margin-top:0px;
+  padding-top:100px;
+  text-align: center;
+  font-weight: bold;
+  color:#9E9E9E;
+}
+
+#contacto h3{
+  color:#9E9E9E;
+}
+
+#contacto article{
+  display: inline-block;
+  width: 45%;
+}
+
+form{
+  width: 100%;
+}
+
+input, textarea{
+  font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
+  line-height: 40px;
+  font-size: 18px;
+  width: 70%;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 5px 0 10px;
+  margin-bottom: 24px;
+  color:black;
+  appearance: none;
+}
+
+input:focus,textarea:focus{
+  border: solid 1px #FF9800;
+  box-shadow: 0 0 5px 1px #FF9800;
+}
+
+textarea{
+  max-height: 225px;
+  max-width:100%;
+  line-height: 27px;
+  padding-top: 15px;
+}
+
+#enviar{
+  width: 30%;
+  background-color:#FF9800;
+  opacity:0.8;
+  transition: 0.8s;
+}
+
+#enviar:hover{
+  transform: scale(1.2,1.2);
+}
+
+#map {
+  margin:0px auto;
+  width: 500px;
+  height: 400px;
+  box-shadow: 0 0 5px 1px #FF9800;
+  border-radius: 7px;
+}
+
+.tel pre{
+  display: inline;
+  font-size: 20px;
+  color:#FF9800;
+font-family:Times New Roman;
+}
+
+.paralax{
+  background-image: url('../Image/posadas.jpg');
+  height: 30%;
+   background-attachment: fixed;
+   background-color: #ffffff;
+   border: 1px solid black;
+   opacity: 0.3;
+}
+.parrafoToggle{
+  display: none;
+}
+
+
+/*----------------RESPONSIVE--------------------*/
+
+@media screen and (max-width:780px){
+
+   .paralax{
+     display: none;
+   }
+
+   #home{
+     background-color: black;
+   }
+
+   .nosotros h2 {
+     padding: 0px;
+     font-size: 34px;
+   }
+
+   .imagenNostros{
+     display:none;
+   }
+
+   .parrafoToggle{
+     display: block;
+     background-color: #ffffff;
+     border: 1px solid black;
+     padding:10px;
+     text-align: left;
+     width: 100%;
+     -webkit-box-shadow: 12px 20px 32px -10px rgba(0,0,0,0.75);
+     -moz-box-shadow: 12px 20px 32px -10px rgba(0,0,0,0.75);
+     box-shadow: 12px 20px 32px -10px rgba(0,0,0,0.75);
+   }
+
+   #logo{
+     width: 250px;
+     padding-top: 100px;
+   }
+
+  #AreasPractica{
+    width: 100%;
+  }
+
+  #AreasPractica .areas{
+    width: 98%;
+    float:none;
+  }
+
+    #AreasPractica .area{
+    margin-top:20px;
+    margin-left: 15px;
+    display: block;
+    float: none;
+    transform: none;
+  }
+
+  #AreasPractica .area:hover{
+    background-color: white;
+  }
+
+   .areas h2{
+     padding-top: 100px;
+     font-size: 34px;
+     margin: 0px auto;
+   }
+
+  #contacto{
+    width: 100%;
+  }
+
+    #contacto h2{
+    padding-top: 100px;
+    font-size: 34px;
+    margin: 0px auto;
+    }
+
+    #contacto .direccion{
+    width: 90%;
+    float:none;
+    }
+
+    #map{
+    width: 98%;
+    }
+
+    #form{
+    width: 100%;
+    }
+
+    #contacto .contacto{
+    margin-top: 10px;
+    width: 98%;
+    float:left;
+    }
+
+    #contacto pre{
+      font-size: 17px;
+    }
+
+}

@@ -1,0 +1,70 @@
+
+.menuToggleBtn{
+  display: none;
+}
+
+.menuToggle{
+  display: none;
+}
+
+.menuToggle a{
+  color:white;
+}
+
+.menuToggle li{
+    border-bottom: 1px solid rgba(256,256,256,0.4);
+}
+
+.menuToggle a:hover{
+  color:#ccc;
+}
+
+.fa-bars{
+  color:#333;
+}
+
+@media screen and (max-width:1024px){
+  #menuTop{
+    display: none;
+  }
+
+  .menuToggleBtn{
+    display: block;
+  }
+
+.menuToggle{
+  display: block;
+  position: absolute;
+  top:82px;
+  left: 0px;
+  z-index: 100;
+  clear:both;
+  overflow: hidden;
+  background-color:rgba(51,51,51,0.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  color:white;
+  transition: 1s;
+  transform: translateX(-100%);
+
+}
+
+.menuToggle ul{
+  list-style-type: none;
+  padding:0px;
+  text-align: left;
+}
+
+.menuToggle ul li{
+  margin:0px;
+    padding:20px;
+  width: 100%;
+  height: 100%;
+}
+
+.menuToggle ul li a{
+  text-decoration: none;
+    padding:20px;
+}
+}
