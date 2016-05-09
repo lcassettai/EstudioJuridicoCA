@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cassettai &amp; Acosta</title>
     <link rel="stylesheet" href="Style/estilos.css">
-    <link rel="stylesheet" href="Style/nosotros.css">
     <link rel="stylesheet" href="Style/home.css">
+    <link rel="stylesheet" href="Style/nosotros.css">
     <link rel="stylesheet" href="Style/ramastrabajo.css">
+    <link rel="stylesheet" href="Style/contacto.css">
     <link type="image/x-icon" href="Image/icono.ico" rel="shortcut icon" />
     <link type="image/x-icon" href="Image/icono.ico" rel="icon" />
     <link rel="stylesheet" href="Style/FontAwesome/css/font-awesome.min.css">
@@ -174,24 +175,28 @@
       </section>
 
       <section id="contacto">
-          <h2>Contacto</h2>
+        <h2>Contacto</h2>
         <article class="direccion">
-          <h3>Oficina  Posadas Misiones Salta 1815  1erPISO</h3>
-          <h3>Lunes a Viernes 8:00 - 13:00 y 16:00 - 20:00 </h3>
-           <div id="map"></div>
-           <div class="tel">
-             <h3>Solicitar Turnos o consultas</h3>
-             <pre><i class="fa fa-phone-square" aria-hidden="true"></i> 0376-154157356    <i class="fa fa-phone-square" aria-hidden="true"></i> 0376-154575753</pre>
-           </div>
+          <div id="map"></div>
         </article>
         <article class="contacto">
-          <form id="form" action="Contacto.php" method="post"  enctype="multipart/form-data">
-            <input type="text" class="datos" name="nombre" id="nombre" placeholder="Nombre*" required="true">
-            <input type="email" class="datos" name="correo" id="correo" placeholder="Email*"  required="true">
-            <input type="tel" class="datos" name="telefono" id="telefono" placeholder="Telefono*"  required="true">
-            <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Consulta"  required="true"></textarea>
-            <input type="submit" name="enviar" id="enviar" value="Enviar" >
-          </form>
+          <div class="imgcontacto">
+            <img src="Image/logoppal.png" alt="">
+          </div>
+          <div class="infocontacto">
+            <div class="conactoflotante"><span class="gris">Oficina:</span><span class="derecha"> Salta 1815 1er Piso. Posadas, Misiones.</span></div>
+            <div class="conactoflotante"><span class="gris">Atencion:<span style="color:white;font-weight:normal;"> Lunes a Viernes</span></span><span class="derecha">08:00 - 13:00hs.<br><br>16:00 - 20:00hs.</span></div>
+            <div class="conactoflotante"><span class="gris" style="width:40%;text-align:left;">Solicitar Turnos o consultas:</span><span class="derecha"><i class="fa fa-phone" aria-hidden="true"></i> 03764-154157356 <br><br><i class="fa fa-phone" aria-hidden="true"></i> 03764-154575753</span></div>
+          </div>
+          <div class="formcontacto">
+            <form id="form" action="Contacto.php" method="post"  enctype="multipart/form-data">
+              <input type="text" class="datos" name="nombre" id="nombre" placeholder="Nombre*" required="true">
+              <input type="email" class="datos" name="correo" id="correo" placeholder="Email*"  required="true">
+              <input type="tel" class="datos" name="telefono" id="telefono" placeholder="Telefono*"  required="true">
+              <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Consulta"  required="true"></textarea>
+              <input type="submit" name="enviar" id="enviar" value="Enviar" >
+            </form>
+          </div>
         </article>
       </section>
     </div>

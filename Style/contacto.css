@@ -1,0 +1,155 @@
+
+
+/* --------------------- Contacto----------------------------*/
+
+#contacto{
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+#contacto h2{
+  font-family: 'Questrial', sans-serif;
+  font-size: 3.125rem;
+  line-height: 4.688rem;
+  font-weight: 600;
+  margin-top:0px;
+  padding-top:100px;
+  text-align: left;
+  font-weight: bold;
+  color:white;
+  padding-left: 5%;
+}
+
+#contacto h3{
+  color:#9E9E9E;
+}
+
+.direccion{
+  float:left;
+  width: 50%;
+}
+
+.contacto{
+  float:left;
+  width: 45%;
+  padding:10px;
+}
+
+.imgcontacto{
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+  margin-right: 30px;
+}
+
+.imgcontacto img{
+  width:180px;
+}
+
+.infocontacto{
+  display: inline-block;;
+  width: 430px;
+  padding: 10px;
+}
+
+.gris{
+  color:#919290;
+  float:left;
+  font-weight: bold;
+}
+
+.derecha{
+  float:right;
+}
+
+.conactoflotante{
+  font-size: 20px;
+  clear:both;
+  color:white;
+  padding:15px 0px;
+  overflow: hidden;
+}
+
+.formcontacto{
+  padding-top: 20px;
+}
+
+form{
+  width: 100%;
+}
+
+input, textarea{
+  font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
+  line-height: 40px;
+  font-size: 18px;
+  width: 30%;
+  border: 1px solid #333;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 5px 0 10px;
+  margin-bottom: 24px;
+  color:black;
+  appearance: none;
+}
+
+input:focus,textarea:focus{
+  border: solid 1px #FF9800;
+  box-shadow: 0 0 5px 1px #FF9800;
+}
+
+textarea{
+  width: 96%;
+  max-height: 80px;
+  max-width:700px;
+  line-height: 27px;
+  padding-top: 15px;
+  margin:5px 0px;
+}
+
+#enviar{
+  width: 30%;
+  opacity:0.8;
+  transition: 0.8s;
+}
+
+#enviar:hover{
+  transform: scale(1.2,1.2);
+}
+
+#map {
+  margin:0px auto;
+  width: 80%;
+  height: 500px;
+  box-shadow: 0 0 5px 1px #FF9800;
+  border-radius: 7px;
+
+}
+
+.tel pre{
+  display: inline;
+  font-size: 20px;
+  color:#FF9800;
+font-family:Times New Roman;
+}
+
+@media screen and (max-width:1200px){
+  .direccion,.contacto{
+    float:none;
+    width: 100%;
+    display:block;
+  }
+
+  #enviar{
+    margin:0px auto;
+    display: block;
+    width: 200px;
+  }
+
+  input{
+    width: 220px;
+  }
+
+  textarea{
+    width: 90%;
+  }
+}
