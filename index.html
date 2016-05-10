@@ -22,7 +22,7 @@
       <!-- Pagina principal -->
      <div id="home">
           <header id="topHead">
-            <div class="headIzquierda"><img src="Image/logo.png" width="200" alt="Cassettai and Acosta abogados"/></div>
+            <div class="headIzquierda"><img src="Image/logo.png" alt="Cassettai and Acosta abogados"/></div>
 
             <!--Menu pantalla pc -->
             <nav id="menuTop">
@@ -50,7 +50,7 @@
 
           <!--Imagen principal en el centr de la pagina-->
          <div id="logoContenedor">
-           <img src="Image/logoppal.png" width="450" alt="Cassettai and Acosta Abogados" id="logo">
+           <img src="Image/logoppalnegro.png" width="450" alt="Cassettai and Acosta Abogados" id="logo">
          </div>
       </div>
 
@@ -175,13 +175,10 @@
       </section>
 
       <section id="contacto">
-        <h2>Contacto</h2>
-        <article class="direccion">
-          <div id="map"></div>
-        </article>
         <article class="contacto">
+          <h2 class="contactotituloizquierda">Contacto</h2>
           <div class="imgcontacto">
-            <img src="Image/logoppal.png" alt="">
+            <img src="Image/logoppalgris.png" alt="">
           </div>
           <div class="infocontacto">
             <div class="conactoflotante"><span class="gris">Oficina:</span><span class="derecha"> Salta 1815 1er Piso. Posadas, Misiones.</span></div>
@@ -190,13 +187,23 @@
           </div>
           <div class="formcontacto">
             <form id="form" action="Contacto.php" method="post"  enctype="multipart/form-data">
-              <input type="text" class="datos" name="nombre" id="nombre" placeholder="Nombre*" required="true">
-              <input type="email" class="datos" name="correo" id="correo" placeholder="Email*"  required="true">
-              <input type="tel" class="datos" name="telefono" id="telefono" placeholder="Telefono*"  required="true">
+              <div class="datosizquierda">
+                <input type="text" class="datos" name="nombre" id="nombre" placeholder="Nombre*" required="true">
+                <input type="email" class="datos" name="correo" id="correo" placeholder="Email*"  required="true">
+                <input type="tel" class="datos" name="telefono" id="telefono" placeholder="Telefono*"  required="true">
+              </div>
+              <div class="datosderecha">
               <textarea name="mensaje" cols="30" rows="10" id="mensaje" placeholder="Consulta"  required="true"></textarea>
-              <input type="submit" name="enviar" id="enviar" value="Enviar" >
+              </div>
+              <div class="btnEnviar">
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
+              </div>
             </form>
           </div>
+        </article>
+        <article class="direccion">
+          <h2 class="contactotituloderecha">Ubicacion Geografica</h2>
+          <div id="map"></div>
         </article>
       </section>
     </div>

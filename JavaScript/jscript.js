@@ -21,7 +21,7 @@ function initMap() {
  var mapDiv = document.getElementById('map');
  var map = new google.maps.Map(mapDiv, {
   center:latLang ,
-  zoom: 17
+  zoom: 18
 });
 
 var marker = new google.maps.Marker({
@@ -31,7 +31,7 @@ var marker = new google.maps.Marker({
 });
 
 var infowindow =  new google.maps.InfoWindow({
-		content: '<IMG BORDER="0" ALIGN="Left" SRC="Image/logo.png" width="100px">',
+		content: '<IMG BORDER="0" ALIGN="Left" SRC="Image/logoppalblanco.png" width="100px">',
 		map: map,
 		position: latLang
 	});

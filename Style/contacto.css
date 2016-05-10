@@ -9,15 +9,25 @@
 
 #contacto h2{
   font-family: 'Questrial', sans-serif;
-  font-size: 3.125rem;
+  font-size: 2.125rem;
   line-height: 4.688rem;
   font-weight: 600;
   margin-top:0px;
   padding-top:100px;
-  text-align: left;
   font-weight: bold;
   color:white;
-  padding-left: 5%;
+  margin-bottom:0px;
+}
+
+.contactotituloizquierda {
+  text-align: left;
+}
+
+.contactotituloderecha{
+  text-align: right;
+  padding-right: 77px;
+  margin-bottom:10px;
+  padding-bottom: 37px;
 }
 
 #contacto h3{
@@ -25,7 +35,7 @@
 }
 
 .direccion{
-  float:left;
+  float:right;;
   width: 50%;
 }
 
@@ -33,6 +43,7 @@
   float:left;
   width: 45%;
   padding:10px;
+  padding-left: 65px;
 }
 
 .imgcontacto{
@@ -72,44 +83,63 @@
 
 .formcontacto{
   padding-top: 20px;
+  overflow: hidden;
 }
 
 form{
   width: 100%;
+  overflow: hidden;
 }
 
 input, textarea{
   font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
   line-height: 40px;
   font-size: 18px;
-  width: 30%;
+  display:block;
   border: 1px solid #333;
   border-radius: 8px;
   text-align: center;
   padding: 0 5px 0 10px;
   margin-bottom: 24px;
   color:black;
+  outline: none;
   appearance: none;
 }
 
 input:focus,textarea:focus{
-  border: solid 1px #FF9800;
-  box-shadow: 0 0 5px 1px #FF9800;
+  border: solid 1px #f0f0f0;
+  box-shadow: 0 0 5px 1px #F0f0f0;
+}
+
+.datosizquierda{
+  float:left;
+
+}
+
+.datosderecha{
+  float:left;
 }
 
 textarea{
-  width: 96%;
-  max-height: 80px;
+  width: 350px;
+  max-height: 155px;
   max-width:700px;
   line-height: 27px;
   padding-top: 15px;
-  margin:5px 0px;
+  margin-left: 50px;
 }
 
 #enviar{
-  width: 30%;
-  opacity:0.8;
-  transition: 0.8s;
+  width: 20%;
+  float: right;
+
+}
+
+.btnEnviar{
+  clear:both;
+  display: block;
+  width: 95%;
+  overflow: hidden;
 }
 
 #enviar:hover{
@@ -119,18 +149,12 @@ textarea{
 #map {
   margin:0px auto;
   width: 80%;
-  height: 500px;
-  box-shadow: 0 0 5px 1px #FF9800;
+  height: 480px;
+  box-shadow: 0 0 5px 1px #f0f0f0;
   border-radius: 7px;
 
 }
 
-.tel pre{
-  display: inline;
-  font-size: 20px;
-  color:#FF9800;
-font-family:Times New Roman;
-}
 
 @media screen and (max-width:1200px){
   .direccion,.contacto{
