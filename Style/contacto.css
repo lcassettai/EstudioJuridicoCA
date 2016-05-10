@@ -25,7 +25,6 @@
 
 .contactotituloderecha{
   text-align: right;
-  padding-right: 77px;
   margin-bottom:10px;
   padding-bottom: 37px;
 }
@@ -36,14 +35,15 @@
 
 .direccion{
   float:right;;
-  width: 50%;
+  width: 45%;
+  padding-right: 20px;
 }
 
 .contacto{
   float:left;
-  width: 45%;
   padding:10px;
-  padding-left: 65px;
+  width: 45%;
+  padding-left: 20px;
 }
 
 .imgcontacto{
@@ -83,18 +83,17 @@
 
 .formcontacto{
   padding-top: 20px;
-  overflow: hidden;
 }
 
 form{
   width: 100%;
-  overflow: hidden;
 }
 
 input, textarea{
   font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
   line-height: 40px;
   font-size: 18px;
+  width: 85%;
   display:block;
   border: 1px solid #333;
   border-radius: 8px;
@@ -113,26 +112,27 @@ input:focus,textarea:focus{
 
 .datosizquierda{
   float:left;
-
+  width: 45%;
 }
 
 .datosderecha{
-  float:left;
+  float:left;;
+  width: 48%;
 }
 
 textarea{
-  width: 350px;
+  width: 100%;
   max-height: 155px;
   max-width:700px;
   line-height: 27px;
   padding-top: 15px;
-  margin-left: 50px;
 }
 
 #enviar{
   width: 20%;
   float: right;
-
+  background-color: grey;
+  color:white;
 }
 
 .btnEnviar{
@@ -142,20 +142,123 @@ textarea{
   overflow: hidden;
 }
 
-#enviar:hover{
-  transform: scale(1.2,1.2);
-}
 
 #map {
   margin:0px auto;
-  width: 80%;
+  width: 100%;
   height: 480px;
   box-shadow: 0 0 5px 1px #f0f0f0;
   border-radius: 7px;
+}
+
+.turnos{
+  width:40%;
+  text-align:left;
+}
+
+@media screen and (max-width:900px){
+
+  #contacto{
+    width: 100%;
+  }
+
+  #contacto .direccion{
+    width: 98%;
+    padding: 10px;
+    float: none;
+    margin: 0px auto;
+  }
+
+    #map{
+    width: 98%;
+    }
+
+    #form{
+    width: 100%;
+    }
+
+    #contacto .contacto{
+    margin-top: 10px;
+    width: 98%;
+    float:left;
+    }
+
+    .contactotituloizquierda {
+      text-align: center;;
+    }
+
+    .contactotituloderecha{
+      text-align: center;
+      margin-bottom:10px;
+      padding-bottom: 37px;
+    }
+
+    .imgcontacto {
+      margin:0px;
+    }
 
 }
 
+@media screen and (max-width:500px){
+  .infocontacto{
+    width: auto;
+  }
 
+  #contacto .contacto {
+    float:none;
+  }
+
+  .contactotituloizquierda {
+    text-align: center;;
+  }
+
+  .contactotituloderecha{
+    text-align: center;
+
+  }
+
+  .gris{
+    float:none;
+    display: block;
+  }
+
+  #contacto .direccion {
+    width: auto;
+  }
+
+  .turnos{
+    width: auto;
+  }
+
+  .derecha{
+    float:none;
+    display: block;
+  }
+
+  .datosderecha{
+    float:none;
+    width: 85%;
+  }
+
+  .datosizquierda {
+    float:none;
+    width: auto;
+  }
+
+  #enviar{
+    float:none;
+    width: 50%;
+    margin:0px auto;
+
+  }
+
+
+  #contacto h2{
+    line-height: 2.688rem;
+  }
+
+}
+/*
 @media screen and (max-width:1200px){
   .direccion,.contacto{
     float:none;
@@ -177,3 +280,5 @@ textarea{
     width: 90%;
   }
 }
+
+*/
