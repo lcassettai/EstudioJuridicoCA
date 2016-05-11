@@ -34,7 +34,7 @@
 }
 
 .direccion{
-  float:right;;
+  float:right;
   width: 45%;
   padding-right: 20px;
 }
@@ -42,7 +42,6 @@
 .contacto{
   float:left;
   padding:10px;
-  width: 45%;
   padding-left: 20px;
 }
 
@@ -77,7 +76,7 @@
   font-size: 20px;
   clear:both;
   color:white;
-  padding:15px 0px;
+  padding:8px 0px;
   overflow: hidden;
 }
 
@@ -117,7 +116,7 @@ input:focus,textarea:focus{
 
 .datosderecha{
   float:left;;
-  width: 48%;
+  width: 51%;
 }
 
 textarea{
@@ -126,6 +125,7 @@ textarea{
   max-width:700px;
   line-height: 27px;
   padding-top: 15px;
+  resize: none;
 }
 
 #enviar{
@@ -138,7 +138,7 @@ textarea{
 .btnEnviar{
   clear:both;
   display: block;
-  width: 95%;
+  width: 98%;
   overflow: hidden;
 }
 
@@ -155,15 +155,23 @@ textarea{
   width:40%;
   text-align:left;
 }
+@media screen and (max-width:1300px){
+  .direccion{
+    width: 30%;
+  }
 
-@media screen and (max-width:900px){
+  #contacto h2 {
+    font-size: xx-large;
+}
+}
+
+@media screen and (max-width:1024px){
 
   #contacto{
-    width: 100%;
+    width: 95%;
   }
 
   #contacto .direccion{
-    width: 98%;
     padding: 10px;
     float: none;
     margin: 0px auto;
@@ -197,6 +205,10 @@ textarea{
       margin:0px;
     }
 
+    .direccion{
+      width: 80%;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -204,8 +216,15 @@ textarea{
     width: auto;
   }
 
+  #contacto{
+    width: 100%;
+  }
+
   #contacto .contacto {
     float:none;
+    width: 100%;
+    margin:0px;
+    padding:0px;
   }
 
   .contactotituloizquierda {
@@ -214,7 +233,6 @@ textarea{
 
   .contactotituloderecha{
     text-align: center;
-
   }
 
   .gris{
@@ -228,6 +246,7 @@ textarea{
 
   .turnos{
     width: auto;
+    text-align: center;
   }
 
   .derecha{
@@ -237,19 +256,30 @@ textarea{
 
   .datosderecha{
     float:none;
-    width: 85%;
+    width: 100%;
   }
 
   .datosizquierda {
     float:none;
-    width: auto;
+    width: 90%;
+    margin:0px auto;
   }
 
   #enviar{
     float:none;
     width: 50%;
     margin:0px auto;
+  }
 
+  input{
+    width: 98%;
+    padding:0px;
+  }
+
+  textarea{
+    width: 87%;
+    display:inline-block;
+    padding:0px;
   }
 
 
@@ -257,28 +287,8 @@ textarea{
     line-height: 2.688rem;
   }
 
+  #map {
+    height: 250px;
+  }
+
 }
-/*
-@media screen and (max-width:1200px){
-  .direccion,.contacto{
-    float:none;
-    width: 100%;
-    display:block;
-  }
-
-  #enviar{
-    margin:0px auto;
-    display: block;
-    width: 200px;
-  }
-
-  input{
-    width: 220px;
-  }
-
-  textarea{
-    width: 90%;
-  }
-}
-
-*/

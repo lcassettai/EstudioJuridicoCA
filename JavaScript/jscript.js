@@ -1,27 +1,33 @@
-/*Desplazamiento vertical*/
-$(function(){
-$('a[href*=#]').click(function() {
-   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-       && location.hostname == this.hostname) {
-           var $target = $(this.hash);
-           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-           if ($target.length) {
-               var targetOffset = $target.offset().top;
-               $('html,body').animate({scrollTop: targetOffset}, 1000);
-               return false;
-          }
-     }
- });
-});
+
 
 /* Mapa*/
+$(document).ready(function(){
+  /*Desplazamiento vertical*/
+  $(function(){
+  $('a[href*=#]').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+             var $target = $(this.hash);
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+             if ($target.length) {
+                 var targetOffset = $target.offset().top;
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+                 return false;
+            }
+       }
+   });
+  });
+
+document.querySelector('#form').addEventListener('submit',sendForm,false);
+});
+
 function initMap() {
  var image = "Image/position.png";
  var latLang = {lat: -27.371686, lng: -55.894387}
  var mapDiv = document.getElementById('map');
  var map = new google.maps.Map(mapDiv, {
   center:latLang ,
-  zoom: 18
+  zoom: 16
 });
 
 var marker = new google.maps.Marker({
@@ -37,14 +43,6 @@ var infowindow =  new google.maps.InfoWindow({
 	});
 
   infowindow.open(map, marker);
-}
-
-
-
-
-window.addEventListener('load',init,false);
-function init(){
-  document.querySelector('#form').addEventListener('submit',sendForm,false);
 }
 
 function sendForm(e){

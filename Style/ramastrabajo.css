@@ -10,12 +10,16 @@
   width:30%;
   float:left;
   padding:0px;
+  transform: translateX(-100%);
+  transition: 1s;
 }
 
 
 .contenedor2{
   float:right;
   width:30%;
+  transform: translateX(100%);
+  transition: 1s;
 }
 
 .item{

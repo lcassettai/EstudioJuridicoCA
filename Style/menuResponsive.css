@@ -35,7 +35,7 @@
 .menuToggle{
   display: block;
   position: absolute;
-  top:82px;
+  top:94px;
   left: 0px;
   z-index: 100;
   clear:both;
@@ -58,7 +58,7 @@
 
 .menuToggle ul li{
   margin:0px;
-    padding:20px;
+  padding:20px;
   width: 100%;
   height: 100%;
 }
@@ -67,4 +67,10 @@
   text-decoration: none;
     padding:20px;
 }
+}
+
+@media screen and (max-width:813px){
+  .menuToggle{
+    top:71px;
+  }
 }
