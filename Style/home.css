@@ -10,7 +10,6 @@
 
 .headIzquierda img{
   padding:10px;
-  width: 200px;
 }
 
 @keyframes logoAnimacion {
@@ -101,14 +100,16 @@
 }
 
 
-@media screen and (max-width:820px){
-  .headIzquierda img{
-    width: 125px;
-  }
-}
 
 @media screen and (max-width:480px){
   #home{
   height: 100%;
+  }
+}
+
+
+@media screen and (max-width:820px){
+  .headIzquierda img{
+    width: 144px;
   }
 }

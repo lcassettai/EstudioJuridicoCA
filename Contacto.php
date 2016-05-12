@@ -11,8 +11,8 @@
       $mensaje = $_POST["mensaje"];
       $imagen = $_POST["imagen"];
       $tel = $_POST["telefono"];
-      $para = "luciano.cassettai@gmail.com";
-      $asunto = "Mensaje de prueba";
+      $para = "estudiojuridicocassettaiacosta@gmail.com";
+      $asunto = "Consula";
 
       $contenido = "
       <b>Nombre del remitente : </b></b> ".$nombre."<br />

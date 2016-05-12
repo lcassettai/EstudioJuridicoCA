@@ -30,19 +30,13 @@ function initMap() {
   zoom: 16
 });
 
-var marker = new google.maps.Marker({
- position: latLang,
- map: map,
- title: 'Cassettai & Acosta Estudio Juridico'
-});
-
 var infowindow =  new google.maps.InfoWindow({
-		content: '<IMG BORDER="0" ALIGN="Left" SRC="Image/logoppalblanco.png" width="100px">',
+		content: '<IMG BORDER="0" ALIGN="Left" SRC="Image/logoMap.png" width="100">',
 		map: map,
 		position: latLang
 	});
 
-  infowindow.open(map, marker);
+  infowindow.open(map);
 }
 
 function sendForm(e){
