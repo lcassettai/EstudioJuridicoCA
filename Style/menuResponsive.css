@@ -23,7 +23,7 @@
   color:#333;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1070px){
   #menuTop{
     display: none;
   }

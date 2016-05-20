@@ -5,6 +5,8 @@
 #contacto{
   overflow: hidden;
   padding-bottom: 30px;
+  padding-top:100px;
+
 }
 
 #contacto h2{
@@ -13,7 +15,7 @@
   line-height: 4.688rem;
   font-weight: 600;
   margin-top:0px;
-  padding-top:100px;
+
   font-weight: bold;
   color:white;
   margin-bottom:0px;
@@ -32,7 +34,6 @@
 .contactotituloderecha{
   text-align: right;
   margin-bottom:10px;
-  padding-bottom: 37px;
 }
 
 #contacto h3{
@@ -40,13 +41,14 @@
 }
 
 .direccion{
-  float:right;
-  width: 45%;
+  display:inline-block;
+  width: 40%;
   padding-right: 20px;
+
 }
 
 .contacto{
-  float:left;
+  display:inline-block;
   padding:10px;
   padding-left: 20px;
 }
@@ -76,7 +78,7 @@
 }
 
 .conactoflotante{
-  font-size: 20px;
+  font-size: 16px;
   clear:both;
   color:white;
   padding:8px 0px;
@@ -94,7 +96,7 @@ form{
 input, textarea{
   font-family: 'Libre Baskerville', 'Playfair Display', Georgia, serif;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 16px;
   width: 85%;
   display:block;
   border: 1px solid #333;
@@ -149,15 +151,19 @@ textarea{
 #map {
   margin:0px auto;
   width: 100%;
-  height: 480px;
+  height: 448px;
   box-shadow: 0 0 5px 1px #f0f0f0;
   border-radius: 7px;
+  margin-bottom: 28px;
+    margin-top: 23px;
 }
 
 .turnos{
   width:40%;
   text-align:left;
 }
+
+
 @media screen and (max-width:1300px){
   .direccion{
     width: 30%;
@@ -168,10 +174,12 @@ textarea{
 }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1040px){
 
   #contacto{
     width: 95%;
+    padding:0px;
+    padding-top:100px;
   }
 
   #contacto .direccion{
@@ -195,13 +203,12 @@ textarea{
     }
 
     .contactotituloizquierda {
-      text-align: center;;
+      text-align: center;
     }
 
     .contactotituloderecha{
       text-align: center;
-      margin-bottom:10px;
-      padding-bottom: 37px;
+      padding:40px 0px 0px 0px;
     }
 
     .imgcontacto {
